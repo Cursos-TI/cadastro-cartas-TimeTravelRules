@@ -40,7 +40,6 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Entrada de dados da Carta 2
     printf("\nCadastro da Carta 2\n");
 
     printf("Estado (A-H): ");
