@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    //Criei as variavéis simples da carta 1
     char estado1;
     char codigo1[4];
     char cidade1[50];
@@ -9,6 +10,7 @@ int main() {
     float pib1;
     int pontosTuristicos1;
 
+    //Copiei os mesmos dados para a carta 2
     char estado2;
     char codigo2[4];
     char cidade2[50];
@@ -16,9 +18,11 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
+    
 
     printf("Cadastro da Carta 1\n");
 
+    //Criei as variaveis usando de um printf para dar a prompt, e um scanf para ler e armazenar a resposta
     printf("Estado (A-H): ");
     scanf(" %c", &estado1);
 
@@ -26,7 +30,7 @@ int main() {
     scanf("%s", codigo1);
 
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", cidade1);
+    scanf(" %s", cidade1);
 
     printf("Populacao: ");
     scanf("%d", &populacao1);
@@ -81,5 +85,6 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
 
+    //encerrei a função main, finalizando o codigo
     return 0;
 }
