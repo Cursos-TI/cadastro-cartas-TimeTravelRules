@@ -11,8 +11,6 @@ int main() {
     int pontosTuristicos1, pontosTuristicos2;
 
     float densidade_populacao, pib_capta;
-    densidade_populacao = (float) populacao1 / area1;
-    pib_capta = pib1 / populacao1;
     
 
     printf("Cadastro da Carta 1\n");
@@ -48,7 +46,7 @@ int main() {
     scanf("%s", codigo2);
 
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", cidade2);
+    scanf(" %s", cidade2);
 
     printf("Populacao: ");
     scanf("%d", &populacao2);
@@ -62,6 +60,9 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos2);
 
+    densidade_populacao = (float) populacao1 / area1;
+    pib_capta = pib1 * 1000000000 / populacao1;
+
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
@@ -74,7 +75,7 @@ int main() {
     printf("Pib per capta: %.2f\n", pib_capta);
 
     densidade_populacao = (float) populacao2 / area2;
-    pib_capta = pib2 / populacao2;
+    pib_capta = pib2 * 1000000000 / populacao2;
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
