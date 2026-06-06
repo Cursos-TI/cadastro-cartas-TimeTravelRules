@@ -74,7 +74,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
     printf("Densidade populacional: %.2f habitantes por km²\n", densidade_populacao);
-    printf("Pib per capta: %.2f\n", pib_capta);
+    printf("Pib per capta: %.2f reais\n", pib_capta);
 
     //Reaproveito a mesma variavel para a segunda carta, mudando seu valor após terminar de utilizá-la para a carta 1
 
@@ -90,7 +90,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
     printf("Densidade populacional: %.2f habitantes por km²\n", densidade_populacao);
-    printf("Pib per capta: %.2f\n", pib_capta);
+    printf("Pib per capta: %.2f reais\n", pib_capta);
 
     //encerrei a função main, finalizando o codigo
     return 0;
