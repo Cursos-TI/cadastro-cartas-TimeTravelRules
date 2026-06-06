@@ -60,6 +60,8 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos2);
 
+    //calculo os valores da densidade e pib per capta, realizando esse processo após os dados serem recebidos e armazenados
+
     densidade_populacao = (float) populacao1 / area1;
     pib_capta = pib1 * 1000000000 / populacao1;
 
@@ -71,8 +73,10 @@ int main() {
     printf("Area: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
-    printf("Densidade populacional: %.2f\n", densidade_populacao);
+    printf("Densidade populacional: %.2f habitantes por km²\n", densidade_populacao);
     printf("Pib per capta: %.2f\n", pib_capta);
+
+    //Reaproveito a mesma variavel para a segunda carta, mudando seu valor após terminar de utilizá-la para a carta 1
 
     densidade_populacao = (float) populacao2 / area2;
     pib_capta = pib2 * 1000000000 / populacao2;
@@ -85,7 +89,7 @@ int main() {
     printf("Area: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
-    printf("Densidade populacional: %.2f\n", densidade_populacao);
+    printf("Densidade populacional: %.2f habitantes por km²\n", densidade_populacao);
     printf("Pib per capta: %.2f\n", pib_capta);
 
     //encerrei a função main, finalizando o codigo
